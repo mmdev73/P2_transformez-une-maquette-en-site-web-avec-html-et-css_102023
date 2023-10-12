@@ -61,17 +61,20 @@ a {
 .no-list-style{
     list-style-type: none;
 }
+
 /*** Header ***/
 header{
     height: 79px;
     display: flex;
     justify-content: space-between;
 }
+
 header img{
     width: 61px;
     height: 19px;
     padding: 30px 50px;
 }
+
 menu{
     height: 50%;
     display: flex;
@@ -79,17 +82,25 @@ menu{
     margin: 0;
     padding: 0 50px;
 }
+
 menu li{    
     padding-top: 10%;
 }
+
 menu li:hover, menu li:active{
     border-top: 2px var(--main-color) solid;
     padding-top: calc(10% - 2px);
 }
+
 menu li a{
     display: block;
     height: 100%;
     color: var(--main-color);
+}
+
+/*** Filter Section ***/
+.filter-section{
+    gap: 35px;
 }
 
 /****** Hebergements And Populaires ***********/
