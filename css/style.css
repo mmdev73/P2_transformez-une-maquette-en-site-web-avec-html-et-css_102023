@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --border-grey: #F2F2F2;
 }
 
 .fa-solid {
@@ -58,8 +59,13 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
 .no-list-style{
     list-style-type: none;
+}
+
+.display-block{
+    display: block;
 }
 
 /*** Header ***/
@@ -101,6 +107,47 @@ menu li a{
 /*** Filter Section ***/
 .filter-section{
     gap: 35px;
+}
+
+.filter-section-searchbar{
+    height: 49px;
+    width: 377px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px var(--border-grey) solid;
+    border-radius: 15px;
+}
+
+.searchbar-icon{
+    height: 49px;
+    width: 50px;
+    border: 1px var(--border-grey) solid;
+    border-radius: 15px 0 0 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--border-grey)
+}
+
+.searchbar-icon i{
+    color: #000;
+}
+
+.searchbar-input{
+    width: 70%;
+    border: none;
+}
+
+.searchbar-button{
+    background-color: var(--main-color);
+    border: 1 px var(--main-color) solid;
+    border-radius: 0 15px 15px 0;
+    padding: 15px 16px;
+    color: white;
+}
+
+.searchbar-button:hover{
+    cursor: pointer;
 }
 
 /****** Hebergements And Populaires ***********/
