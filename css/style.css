@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin:0;
 }
 
 .main-container {
@@ -72,9 +73,25 @@ header img{
     padding: 30px 50px;
 }
 menu{
+    height: 50%;
     display: flex;
     gap: 68px;
+    margin: 0;
+    padding: 0 50px;
 }
+menu li{    
+    padding-top: 10%;
+}
+menu li:hover, menu li:active{
+    border-top: 2px var(--main-color) solid;
+    padding-top: calc(10% - 2px);
+}
+menu li a{
+    display: block;
+    height: 100%;
+    color: var(--main-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
