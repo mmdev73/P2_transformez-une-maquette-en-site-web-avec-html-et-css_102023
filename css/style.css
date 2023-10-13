@@ -227,7 +227,7 @@ menu li a{
 }
 
 .heb-card-link{
-    width: 30%;
+    width: calc(33.33% - 30px);
 }
 
 .heb-card-content{
@@ -379,6 +379,10 @@ footer{
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .acti-card img{
+        height: 200px;
     }
 }
 
