@@ -75,6 +75,10 @@ a {
     list-style-type: none;
 }
 
+.no-list-padding{
+    padding-inline-start: 0;
+}
+
 .display-block{
     display: block;
 }
@@ -327,8 +331,17 @@ footer{
     align-items: flex-start;
     align-self: stretch;
     background-color:  var(--border-grey);
+    margin-top: 30px;
 }
 
+.footer-sub-box{
+    width: 33%;
+    padding: 20px;
+}
+
+.footer-title{
+    margin: 0;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
