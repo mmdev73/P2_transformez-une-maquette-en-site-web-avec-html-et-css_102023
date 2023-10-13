@@ -306,6 +306,7 @@ menu li a{
     justify-content: flex-end;
     align-items: center;
     flex: 1 0 0;
+    padding: 0;
 }
 
 .acti-card img{
