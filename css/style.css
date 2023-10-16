@@ -6,6 +6,7 @@
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
+  --main-bg-white: #fff;
   --filter-bg-color: #deebff;
   --border-grey: #f2f2f2;
   --border-dark-grey: #d9d9d9;
@@ -372,9 +373,17 @@ footer {
   }
 
   .heb-card-link {
-    height: 100%;
     display: flex;
     flex: auto;
+  }
+
+  .heb-card{
+    width:100%;
+  }
+
+  .heb-card-content{
+    display: flex;
+    flex-flow: column;
   }
   /***  Populaires ***/
   .populaires {
@@ -400,8 +409,20 @@ footer {
     font-size: 13px;
   }
   /*** Activités ***/
+  .acti-card{
+    height: 100%;
+    margin: 0;
+  }
+
+  .acti-card-link{
+    height: 100%;
+  }
   .acti-card img {
     height: 200px;
+  }
+
+  .acti-card-title{
+    margin: 0;
   }
 }
 
@@ -500,6 +521,33 @@ footer {
   }
 
   /*** Hébaergement et Populaire ***/
-  /* .hebergements-and-populaires {
-  } */
+  .hebergements-and-populaires {
+    flex-flow:column-reverse;
+    padding: 0;
+  }
+
+  .hebergements-and-populaires section{
+    border-radius: 0;
+  }
+
+  section.hebergements{
+    background-color: var(--main-bg-white);
+  }
+
+  .populaires-cards{
+    flex-flow: column;
+  }
+
+  .populaires-cards a{
+    width: 100%;
+  }
+
+  .heb-card-container, .acti-card-container, footer{
+    flex-flow: column;
+  }
+
+  .heb-card-link, .acti-card-link{
+    width: 100%;
+  }
+
 }
