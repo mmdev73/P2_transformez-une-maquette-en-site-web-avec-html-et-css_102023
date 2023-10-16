@@ -92,6 +92,11 @@ a {
 .padding-right-10 {
   padding-right: 10px;
 }
+
+.margin-right-10{
+    margin-right: 10px;
+}
+
 /*** Responsive rules ***/
 .mobile-appear {
   display: none;
