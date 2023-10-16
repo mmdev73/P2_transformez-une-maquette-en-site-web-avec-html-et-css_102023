@@ -97,7 +97,7 @@ a {
 }
 
 .mobile-disappear {
-  display: bloc;
+  display: block;
 }
 
 /*** Header ***/
@@ -178,7 +178,7 @@ menu li a {
 
 .searchbar-button {
   background-color: var(--main-color);
-  border: 1 px var(--main-color) solid;
+  border: 1px var(--main-color) solid;
   border-radius: 0 15px 15px 0;
   padding: 15px 16px;
   color: white;
@@ -500,6 +500,6 @@ footer {
   }
 
   /*** Hébaergement et Populaire ***/
-  .hebergements-and-populaires {
-  }
+  /* .hebergements-and-populaires {
+  } */
 }
