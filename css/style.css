@@ -520,7 +520,7 @@ footer {
     width: calc(50% - 10px);
   }
 
-  /*** Hébaergement et Populaire ***/
+  /*** Hébergement et Populaire ***/
   .hebergements-and-populaires {
     flex-flow:column-reverse;
     padding: 0;
