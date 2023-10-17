@@ -463,7 +463,7 @@ footer {
     height: auto;
     flex-flow: column;
     align-items: center;
-    margin-bottom: 1.875;
+    margin-bottom: 1.875rem;
   }
   nav,
   menu {
