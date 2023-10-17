@@ -85,10 +85,6 @@ a {
   padding-inline-start: 0;
 }
 
-.display-block {
-  display: block;
-}
-
 .padding-right-10 {
   padding-right: 0.625rem;
 }
@@ -105,6 +101,7 @@ a {
 .mobile-disappear {
   display: block;
 }
+
 
 /*** Header ***/
 header {
@@ -251,14 +248,28 @@ menu li a {
   width: calc(33.33% - 1.875rem);
 }
 
+.heb-card{
+    height: 17rem;
+    padding: 0;
+}
+
 .heb-card-content {
+  height: 50%;
   padding: 0 0.938rem 0 0.938rem;
+  display:flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.heb-card-title, .heb-card-subtitle{
+    margin: 0;
 }
 
 .heb-card img {
   height: 7.75rem;
-  width: 100%;
+  width: calc(100% - 10px);
   border-radius: 1.25rem 1.25rem 0 0;
+  border: 5px white solid;
 }
 
 /****** Populaires ***********/
@@ -315,25 +326,25 @@ menu li a {
 
 .acti-card-container {
   display: flex;
-  align-items: flex-start;
   gap: 1.875rem;
-  align-self: stretch;
 }
-
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
 .acti-card-link {
+  height: 27.438rem;
   width: 25%;
+  display:flex;
+  flex-flow: column;
 }
 
 .acti-card {
+  height: 100%;
   display: flex;
-  height: 27.438rem;
   flex-direction: column;
-  flex: 1 0 0;
   padding: 0;
 }
 
 .acti-card img {
-  height: 21.188rem;
+  height: 380px;
   width: 100%;
   border-radius: 1.25rem 1.25rem 0 0;
 }
@@ -341,6 +352,7 @@ menu li a {
 .acti-card-title {
   padding: 1.25rem 1.188rem;
   font-size: 1rem;
+  margin: 0;
 }
 
 /*** Footer ***/
@@ -415,16 +427,17 @@ footer {
     font-size: 0.813rem;
   }
   /*** Activités ***/
+  .acti-card-link{
+    height: 100%;
+  }
+  
   .acti-card{
     height: 100%;
     margin: 0;
   }
 
-  .acti-card-link{
-    height: 100%;
-  }
   .acti-card img {
-    height: 12.5rem;
+    height: 200px;
   }
 
   .acti-card-title{
