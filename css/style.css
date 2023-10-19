@@ -330,7 +330,6 @@ menu li a {
 }
 /* ------------------------------------------------------------------------------------------------------------------------------------ */
 .acti-card-link {
-  height: 27.438rem;
   width: 25%;
   display:flex;
   flex-flow: column;
@@ -343,13 +342,14 @@ menu li a {
   padding: 0;
 }
 
-.acti-card img {
-  height: 380px;
+.acti-card-img {
+  height: 100%;
   width: 100%;
   border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .acti-card-title {
+  height: 3rem;
   padding: 1.25rem 1.188rem;
   font-size: 1rem;
   margin: 0;
@@ -427,21 +427,8 @@ footer {
     font-size: 0.813rem;
   }
   /*** Activités ***/
-  .acti-card-link{
-    height: 100%;
-  }
-  
-  .acti-card{
-    height: 100%;
-    margin: 0;
-  }
-
   .acti-card img {
     height: 200px;
-  }
-
-  .acti-card-title{
-    margin: 0;
   }
 }
 
