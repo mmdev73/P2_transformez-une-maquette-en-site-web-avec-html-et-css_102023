@@ -180,6 +180,10 @@ menu li a {
   text-align: center;
 }
 
+input.searchbar-input:focus{
+    outline: none;
+}
+
 .searchbar-button {
   background-color: var(--main-color);
   border: 1px var(--main-color) solid;
