@@ -23,12 +23,14 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0;
+  align-items: center;
+  margin: auto;
+  max-width: 1440px;
 }
 
 .main-container {
   width: 100%;
-  max-width: 1440px;
+  
   padding: 0 3.125rem;
   box-sizing: border-box;
 }
@@ -244,8 +246,8 @@ input.searchbar-input:focus{
 .heb-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1.875rem;
-  padding-bottom: 0.938rem;
 }
 
 .heb-card-link {
@@ -437,7 +439,7 @@ footer {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   /*** Global ***/
   .main-container {
     padding: 0;
