@@ -95,16 +95,6 @@ a {
     margin-right: 0.625rem;
 }
 
-/*** Responsive rules ***/
-.mobile-appear {
-  display: none;
-}
-
-.mobile-disappear {
-  display: block;
-}
-
-
 /*** Header ***/
 header {
   height: 4.938rem;
@@ -197,6 +187,10 @@ input.searchbar-input:focus{
 .searchbar-button:hover {
   cursor: pointer;
 }
+
+.mobile-appear:after{
+    content: "Rechercher";
+  }
 
 .filter-section-filter {
   gap: 0.938rem;
@@ -356,7 +350,7 @@ input.searchbar-input:focus{
 
 .acti-card-title {
   height: 3rem;
-  padding: 1rem;
+  padding: 20px 19px;
   font-size: 1rem;
   margin: 0;
 }
@@ -509,12 +503,13 @@ footer {
     color: white;
   }
 
-  .mobile-appear {
-    display: flex;
-  }
-
-  .mobile-desappear {
-    display: none;
+  .mobile-appear:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f002";
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 1.2rem;
   }
 
   .filter-section-filter {
