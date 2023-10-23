@@ -334,7 +334,7 @@ input.searchbar-input:focus{
   display: flex;
   gap: 1.875rem;
 }
-/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
 .acti-card-link {
   width: 25%;
   display:flex;
@@ -349,14 +349,14 @@ input.searchbar-input:focus{
 }
 
 .acti-card-img {
-  height: 100%;
+  height: 23.75rem;
   width: 100%;
   border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .acti-card-title {
   height: 3rem;
-  padding: 1.25rem 1.188rem;
+  padding: 1rem;
   font-size: 1rem;
   margin: 0;
 }
