@@ -246,19 +246,23 @@ input.searchbar-input:focus{
 
 .heb-card-link {
   width: calc(33.33% - 1.875rem);
+  display:flex;
 }
 
 .heb-card{
-    height: 17rem;
+    width: 100%;
     padding: 0;
+    display: flex;
+    flex-flow: column;
+    gap: 4px;
 }
 
 .heb-card-content {
-  height: 50%;
-  padding: 0 0.938rem 0 0.938rem;
+  padding: 0 15px 0 15px;
   display:flex;
   flex-flow: column;
   justify-content: space-around;
+  gap: 8px;
 }
 
 .heb-card-title, .heb-card-subtitle{
@@ -330,13 +334,15 @@ input.searchbar-input:focus{
 }
 
 .acti-card-link {
-  width: 25%;
+  /* width: 25%; */
+  width: calc(25% - 30px);
   display:flex;
-  flex-flow: column;
+  /* flex-flow: column; */
 }
 
 .acti-card {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -349,7 +355,6 @@ input.searchbar-input:focus{
 }
 
 .acti-card-title {
-  height: 3rem;
   padding: 20px 19px;
   font-size: 1rem;
   margin: 0;
