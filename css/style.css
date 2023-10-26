@@ -245,6 +245,7 @@ input.searchbar-input:focus{
 }
 
 .heb-card-link {
+  min-height: 207px;
   width: calc(33.33% - 1.875rem);
   display:flex;
 }
@@ -255,25 +256,27 @@ input.searchbar-input:focus{
     display: flex;
     flex-flow: column;
     gap: 4px;
-}
 
-.heb-card-content {
-  padding: 0 15px 0 15px;
-  display:flex;
-  flex-flow: column;
-  justify-content: space-around;
-  gap: 8px;
-}
-
-.heb-card-title, .heb-card-subtitle{
-    margin: 0;
 }
 
 .heb-card img {
-  height: 7.75rem;
-  width: calc(100% - 10px);
-  border-radius: 1.25rem 1.25rem 0 0;
-  border: 5px white solid;
+    height: 7.75rem;
+    width: calc(100% - 0.625rem);
+    border-radius: 1.25rem 1.25rem 0 0;
+    border: 5px white solid;
+}
+
+.heb-card-content {
+  height: calc(100% - 8.375rem);
+  padding: 0 15px 0 15px;
+  box-sizing: border-box;
+  display:flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.heb-card-title,.heb-card-subtitle{
+    margin: 0;    
 }
 
 /****** Populaires ***********/
@@ -334,10 +337,8 @@ input.searchbar-input:focus{
 }
 
 .acti-card-link {
-  /* width: 25%; */
-  width: calc(25% - 30px);
+  width: calc(25% - 1.875rem);
   display:flex;
-  /* flex-flow: column; */
 }
 
 .acti-card {
@@ -400,14 +401,6 @@ footer {
     flex: auto;
   }
 
-  .heb-card{
-    width:100%;
-  }
-
-  .heb-card-content{
-    display: flex;
-    flex-flow: column;
-  }
   /***  Populaires ***/
   .populaires {
     width: 100%;
@@ -470,7 +463,7 @@ footer {
   menu li:hover {
     border-top: none;
     padding-top: 0;
-    padding-bottom: calc(5% - 1px);
+    padding-bottom: calc(5% - 0.063rem);
     border-bottom: 1px var(--main-color) solid;
   }
 
