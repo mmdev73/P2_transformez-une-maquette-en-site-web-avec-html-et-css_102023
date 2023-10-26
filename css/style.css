@@ -269,7 +269,6 @@ input.searchbar-input:focus{
 .heb-card-content {
   height: calc(100% - 8.375rem);
   padding: 0 15px 0 15px;
-  box-sizing: border-box;
   display:flex;
   flex-flow: column;
   justify-content: space-around;
