@@ -122,6 +122,7 @@ menu li {
 
 menu li:hover,
 menu li:active {
+  color: var(--main-color);
   border-top: 0.125rem var(--main-color) solid;
   padding-top: calc(10% - 0.125rem);
   cursor: pointer;
@@ -129,8 +130,7 @@ menu li:active {
 
 menu li a {
   display: block;
-  height: 100%;
-  color: var(--main-color);
+  height: 100%;  
 }
 
 /*** Filter Section ***/
@@ -170,6 +170,10 @@ menu li a {
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
+}
+
+.searchbar-input::placeholder{
+    color: black;
 }
 
 input.searchbar-input:focus{
@@ -267,15 +271,20 @@ input.searchbar-input:focus{
 }
 
 .heb-card-content {
-  height: calc(100% - 8.375rem);
-  padding: 0 15px 0 15px;
-  display:flex;
+  display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 15px 0 15px;
 }
 
 .heb-card-title,.heb-card-subtitle{
     margin: 0;    
+}
+
+.heb-card-rating{
+    margin-bottom: 10px;
 }
 
 /****** Populaires ***********/
