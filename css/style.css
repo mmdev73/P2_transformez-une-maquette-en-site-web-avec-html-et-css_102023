@@ -122,6 +122,7 @@ menu li {
 
 menu li:hover,
 menu li:active {
+  color: var(--main-color);
   border-top: 0.125rem var(--main-color) solid;
   padding-top: calc(10% - 0.125rem);
   cursor: pointer;
@@ -129,8 +130,7 @@ menu li:active {
 
 menu li a {
   display: block;
-  height: 100%;
-  color: var(--main-color);
+  height: 100%;  
 }
 
 /*** Filter Section ***/
@@ -170,6 +170,10 @@ menu li a {
   font-weight: bold;
   font-size: 1.2em;
   text-align: center;
+}
+
+.searchbar-input::placeholder{
+    color: black;
 }
 
 input.searchbar-input:focus{
