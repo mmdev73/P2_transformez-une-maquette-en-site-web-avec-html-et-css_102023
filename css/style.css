@@ -389,10 +389,6 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/*** Large Desktop devices (more than 1440px) ***/
-.main-container {
-  max-width: 1440px;
-}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
   /*** Hébergement et Populaires ***/
